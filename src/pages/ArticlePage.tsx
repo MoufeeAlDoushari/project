@@ -8,6 +8,9 @@ import { Pagination } from '../components/Pagination';
 import { articles, authors, comments } from '../data/mockData';
 import { ReactionType } from '../types';
 
+
+
+
 export const ArticlePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [selectedReaction, setSelectedReaction] = useState<ReactionType | null>(null);
